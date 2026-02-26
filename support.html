@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#030014" media="(prefers-color-scheme: dark)">
+    <title data-i18n="footer.support">Support - Lucidify</title>
+    <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="assets/logo.svg" alt="Lucidify Logo" class="logo-img">
+            <span class="logo-text">Lucidify</span>
+        </a>
+
+        <div class="nav-links">
+            <div class="nav-icons">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <div class="lang-dropdown">
+                    <button class="icon-btn current-lang">EN</button>
+                    <div class="lang-menu">
+                        <a href="?lang=en" data-lang="en">English</a>
+                        <a href="?lang=tr" data-lang="tr">Türkçe</a>
+                        <a href="?lang=es" data-lang="es">Español</a>
+                        <a href="?lang=de" data-lang="de">Deutsch</a>
+                        <a href="?lang=fr" data-lang="fr">Français</a>
+                        <a href="?lang=pt" data-lang="pt">Português</a>
+                        <a href="?lang=ja" data-lang="ja">日本語</a>
+                        <a href="?lang=ko" data-lang="ko">한국어</a>
+                        <a href="?lang=zh" data-lang="zh">简体中文</a>
+                        <a href="?lang=ru" data-lang="ru">Русский</a>
+                        <a href="?lang=ar" data-lang="ar">العربية</a>
+                        <a href="?lang=hi" data-lang="hi">हिन्दी</a>
+                    </div>
+                </div>
+            </div>
+            <a href="index.html" class="nav-cta" data-i18n="nav.back">Back to Home</a>
+        </div>
+    </nav>
+
+    <div class="legal-container" data-i18n="legal.support_html">
+        <h1 data-i18n="footer.support">Support Center</h1>
+
+        <h2>Frequently Asked Questions (FAQ)</h2>
+
+        <h3>1. How do I delete my data?</h3>
+        <p>All your data is stored locally on your device. You can delete all your data at any time by going to
+            <strong>Settings -&gt; Clear All Data</strong>.
+        </p>
+
+        <h3>2. How do I restore my purchases?</h3>
+        <p>If you have switched devices or reinstalled the app, you can restore your premium subscription by going to
+            the premium Upgrade screen and tapping <strong>Restore Purchases</strong>.</p>
+
+        <h3>3. Does the app need an internet connection?</h3>
+        <p>An internet connection is required to use AI features (dream interpretation and AI image generation) and
+            Cloud storage syncing (if configured by OS). Basic journaling and offline features do not require an active
+            internet connection.</p>
+
+        <h3>4. How is my privacy protected?</h3>
+        <p>We do not store your data on our servers. Your data stays securely on your device. AI features use external
+            secure APIs.</p>
+
+        <hr>
+
+        <h2>Contact Us</h2>
+        <p>If you need further assistance, please reach out to us at: <strong>destek8altioffice@gmail.com</strong></p>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+            <span class="separator">•</span>
+            <a href="support.html" data-i18n="footer.support">Support</a>
+            <span class="separator">•</span>
+            <span>© 2026 Lucidify</span>
+        </div>
+    </footer>
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

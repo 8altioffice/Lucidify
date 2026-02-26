@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#6b21a8" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#030014" media="(prefers-color-scheme: dark)">
+
+    <title data-i18n="hero.label">Lucidify - Dream Journal & Sleep Tracker</title>
+    <meta name="description" content="Track your sleep, log your dreams, and get AI-powered insights with Lucidify.">
+
+    <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="assets/logo.svg" alt="Lucidify Logo" class="logo-img">
+            <span class="logo-text">Lucidify</span>
+        </a>
+
+        <button class="mobile-menu-btn" aria-label="Menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+
+        <div class="nav-links">
+            <a href="#features" class="nav-item" data-i18n="nav.features">Features</a>
+            <a href="#faq" class="nav-item" data-i18n="nav.faq">FAQ</a>
+
+            <div class="nav-icons">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <div class="lang-dropdown">
+                    <button class="icon-btn current-lang">EN</button>
+                    <div class="lang-menu">
+                        <a href="?lang=en" data-lang="en">English</a>
+                        <a href="?lang=tr" data-lang="tr">Türkçe</a>
+                        <a href="?lang=es" data-lang="es">Español</a>
+                        <a href="?lang=de" data-lang="de">Deutsch</a>
+                        <a href="?lang=fr" data-lang="fr">Français</a>
+                        <a href="?lang=pt" data-lang="pt">Português</a>
+                        <a href="?lang=ja" data-lang="ja">日本語</a>
+                        <a href="?lang=ko" data-lang="ko">한국어</a>
+                        <a href="?lang=zh" data-lang="zh">简体中文</a>
+                        <a href="?lang=ru" data-lang Russian>Русский</a>
+                        <a href="?lang=ar" data-lang="ar">العربية</a>
+                        <a href="?lang=hi" data-lang="hi">हिन्दी</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="mailto:destek8altioffice@gmail.com" class="nav-cta" data-i18n="nav.contact">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero reveal active">
+        <div class="hero-glow"></div>
+        <p class="hero-label" data-i18n="hero.label">Dream Journal & Sleep Tracker</p>
+        <h1 class="hero-title" data-i18n="hero.title">Unlock Your Dreams.</h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Log dreams, discover patterns, and explore the
+            subconscious.<br>Empowered by AI for modern dreamers.</p>
+
+        <div class="app-buttons">
+            <a href="#" class="app-store-btn">
+                <svg viewBox="0 0 384 512" width="20" height="20" fill="currentColor">
+                    <path
+                        d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 52.3-11.4 69.5-34.3z" />
+                </svg>
+                <div class="btn-text">
+                    <span data-i18n="hero.download_pre">Download on the</span>
+                    <span class="btn-store-name" data-i18n="hero.download_store">App Store</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="hero-visual">
+            <div class="app-screenshot">
+                <img src="assets/hero_left.png" alt="App Screenshot Left" class="screenshot-img"
+                    data-i18n-alt="hero.img_alt_1">
+            </div>
+            <div class="app-screenshot main-shot">
+                <img src="assets/hero_middle.png" alt="App Screenshot Middle" class="screenshot-img"
+                    data-i18n-alt="hero.img_alt_2">
+            </div>
+            <div class="app-screenshot">
+                <img src="assets/hero_right.png" alt="App Screenshot Right" class="screenshot-img"
+                    data-i18n-alt="hero.img_alt_3">
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features reveal">
+        <div class="section-header">
+            <h2 data-i18n="features.title">Why Choose Lucidify</h2>
+        </div>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="card-icon">🧠</div>
+                <h3 data-i18n="features.card1_title">AI Interpetations</h3>
+                <p data-i18n="features.card1_text">Get deep insights and meanings of your dreams powered by advanced AI
+                    models. Visualize your dreams with AI generated arts.</p>
+            </div>
+            <div class="feature-card">
+                <div class="card-icon">🌙</div>
+                <h3 data-i18n="features.card2_title">Sleep Tracking</h3>
+                <p data-i18n="features.card2_text">Monitor your sleep patterns and improve your sleep quality.
+                    Everything is integrated smoothly with your journal.</p>
+            </div>
+            <div class="feature-card">
+                <div class="card-icon">🔒</div>
+                <h3 data-i18n="features.card3_title">Privacy First</h3>
+                <p data-i18n="features.card3_text">Your data is stored locally on your device. We respect your privacy
+                    and provide a completely secure experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works reveal">
+        <div class="section-header">
+            <h2 data-i18n="how.title">How It Works</h2>
+        </div>
+        <div class="steps-grid">
+            <div class="step">
+                <div class="step-number">01</div>
+                <h3 data-i18n="how.step1_title">Record</h3>
+                <p data-i18n="how.step1_text">Quickly log your dream details right after you wake up using voice or text
+                    notes.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">02</div>
+                <h3 data-i18n="how.step2_title">Analyze</h3>
+                <p data-i18n="how.step2_text">Let our AI uncover hidden patterns and meanings behind your subconscious
+                    thoughts.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">03</div>
+                <h3 data-i18n="how.step3_title">Lucidity</h3>
+                <p data-i18n="how.step3_text">Increase your chances of lucid dreaming by setting intentions and doing
+                    reality checks.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq reveal">
+        <div class="section-header">
+            <h2 data-i18n="faq.title">FAQ</h2>
+        </div>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h3 data-i18n="faq.q1">Is my data secure?</h3>
+                <p data-i18n="faq.a1">Yes! All your data is saved locally on your device unless you choose to back it up
+                    or use AI services which securely process the requests.</p>
+            </div>
+            <div class="faq-item">
+                <h3 data-i18n="faq.q2">Do I need internet for AI features?</h3>
+                <p data-i18n="faq.a2">Yes, an active internet connection is required to interpret dreams and generate
+                    images via our secure AI partners.</p>
+            </div>
+            <div class="faq-item">
+                <h3 data-i18n="faq.q3">Can I export my journal?</h3>
+                <p data-i18n="faq.a3">Absolutely. Export your whole dream journal and settings cleanly with a single tap
+                    in the settings module.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bottom-cta reveal">
+        <h2 data-i18n="cta.title">Begin your lucid journey.</h2>
+        <p data-i18n="cta.subtitle">Download Lucidify and explore what your dreams tell you.</p>
+        <div class="app-buttons">
+            <a href="#" class="app-store-btn">
+                <svg viewBox="0 0 384 512" width="20" height="20" fill="currentColor">
+                    <path
+                        d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 52.3-11.4 69.5-34.3z" />
+                </svg>
+                <div class="btn-text">
+                    <span data-i18n="hero.download_pre">Download on the</span>
+                    <span class="btn-store-name" data-i18n="hero.download_store">App Store</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+            <span class="separator">•</span>
+            <a href="support.html" data-i18n="footer.support">Support</a>
+            <span class="separator">•</span>
+            <span data-i18n="footer.copyright">© 2026 Lucidify</span>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
